@@ -6,4 +6,8 @@ I have created a set of Bicep files that will allow you to quickly deploy an Exp
 
 In this Experiment I create an **Experiment** that creates a Fault for **Service Bus**.  When you run the experiement you will see the rule enabled and all traffic to **Service Bus** will be denied. 
 
+### Navigate to the NSG Experiment for details ### 
+
+![NSG Experiment](/Experiments/NSG%20Faults/BICEP)
+
 
