@@ -8,6 +8,6 @@ In this Experiment I create an **Experiment** that creates a Fault for **Service
 
 ### Navigate to the NSG Experiment for details ### 
 
-![NSG Experiment](/Experiments/NSG%20Faults/BICEP)
+![NSG Experiment](Experiments/NSG%20Faults/BICEP)
 
 
