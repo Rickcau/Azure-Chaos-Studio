@@ -1,6 +1,8 @@
 # Azure Chaos Studio - Network Security Group Experiment
 Deploying the Main.bicep file will result in the creation of an Azure Chaos Studio Experiment that makes use of an NSG fault.  The purpose of this example is to provide you with a reusable set of Bicep files that can be modified and used to deploy any type of Azure Chaos Experiment and Fault.  <br>
 
+## Description of the files ##
+
 | Filename       | Description |
 | ----           | ----        |
 | Main.bicep     | This is the primary Bicep file and it has a dependency on the other Bicep files |
