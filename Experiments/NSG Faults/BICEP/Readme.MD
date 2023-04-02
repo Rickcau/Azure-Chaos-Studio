@@ -43,5 +43,6 @@ The Experiment.Bicep takes 4 parameters that are passed in from the Main.Bicep f
 In order to deploy the **Experiment** a resouce group needs to created or you will need to use an existing Resource Group.  Once the Resource group is created, you can deploy using **az deployment group create**.<br>
 
 1. **az group create --location eastus --resource-group rg-MyTestGroup**
-2. **az deployment group create --resource-group rg-MyTestGrpup --template-file main.bicep** 
-   If you would like to pass parameters to the main.bicep file you create a parameters.bicep file or pass them in as JSON.  For more details on how to pass parameters, take a look at the online docs for *az deployment group*.
+2. **az deployment group create --resource-group rg-MyTestGrpup --template-file main.bicep**<br>
+ 
+If you would like to pass parameters to the main.bicep file you create a parameters.bicep file or pass them in as JSON.  For more details on how to pass parameters, take a look at the online docs for *az deployment group*.
