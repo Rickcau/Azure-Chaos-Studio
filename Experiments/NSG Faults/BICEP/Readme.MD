@@ -45,4 +45,4 @@ In order to deploy the **Experiment** a resouce group needs to created or you wi
 1. **az group create --location eastus --resource-group rg-MyTestGroup**
 2. **az deployment group create --resource-group rg-MyTestGrpup --template-file main.bicep**<br>
  
-If you would like to pass parameters to the main.bicep file you create a parameters.bicep file or pass them in as JSON.  For more details on how to pass parameters, take a look at the online docs for *az deployment group*.
+If you would like to pass parameters to the main.bicep file you create a parameters.bicep file or pass them in as JSON.  For more details on how to pass parameters, take a look at the online docs for <a href="https://learn.microsoft.com/en-us/cli/azure/deployment/group?view=azure-cli-latest" target="_blank">Learn - az deployment create</a>.
