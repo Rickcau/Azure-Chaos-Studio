@@ -14,7 +14,7 @@ sdfsdf
 
    ~~~
     jsdlkfjsldjfsdjf
-    az provider show --namespace 'Microsoft.Chaos' grep registrationState
+    az provider show --namespace 'Microsoft.Chaos' | grep registrationState
    ~~~
     
     
