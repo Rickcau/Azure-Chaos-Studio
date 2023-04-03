@@ -7,5 +7,12 @@ The following commands come in handy when useing Azure Chaos Studio
    ~~~
     az provider show --namespace 'Microsoft.Chaos' | grep registrationState
    ~~~
+   
+### Enumerate properties for the Microsoft.Chaos Provider <br>
+   **Bash**
+
+   ~~~
+    az provider show --namespace Microsoft.Chaos
+   ~~~
     
     
