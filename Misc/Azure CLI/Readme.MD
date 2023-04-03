@@ -5,7 +5,7 @@ The following commands come in handy when useing Azure Chaos Studio
 
             ```
             
-               az provider show --namespace 'Microsoft.Chaos' | grep registrationState
+               az provider show --namespace 'Microsoft.Chaos' &#124; grep registrationState
             
             ```
 
