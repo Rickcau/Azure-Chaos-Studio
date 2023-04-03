@@ -19,5 +19,3 @@ In this Experiment I create an **Experiment** that creates a Fault for **Service
 
 [NSG Experiment](Experiments/NSG%20Faults/BICEP)
 
-
-ss
