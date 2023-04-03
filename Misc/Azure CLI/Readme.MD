@@ -13,7 +13,6 @@ The following commands come in handy when useing Azure Chaos Studio
 sdfsdf
 
    ~~~
-    jsdlkfjsldjfsdjf
     az provider show --namespace 'Microsoft.Chaos' | grep registrationState
    ~~~
     
