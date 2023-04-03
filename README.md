@@ -7,7 +7,8 @@ The intent of this repo is to provide various artifacts that help you better und
 [Test Availability Zone Failure](Misc/PDFs/ChaosEngineering-Scenario-Test-Availability-Zone-failure.pdf)<br>
 
 ## Azure CLI Commands
-[Useful Commands for Chaos Studio](Misc/Azure CLI/Readme.MD)<br>
+
+[Useful Commands for Chaos Studio](Misc/Azure20%CLI/Readme.MD)<br>
 
 ## Network Security Group Experiment
 I have created a set of Bicep files that will allow you to quickly deploy an Experiment that leverages an NSG.  It will setup the necessary permissions for the Experiment, enable the Target and Capabilities as well.<br>
