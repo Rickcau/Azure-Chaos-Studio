@@ -8,6 +8,7 @@ The following commands come in handy when useing Azure Chaos Studio
     ~~~
         az provider show --namespace 'Microsoft.Chaos' | grep registrationState
     ~~~
+    <br>
 
     
     
