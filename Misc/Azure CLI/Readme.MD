@@ -24,10 +24,19 @@ The following commands come in handy when useing Azure Chaos Studio
     az provider register --namespace Microsoft.storage
    ~~~
     
-### Determine if a Target is valid<br>
+### Determine if a Target is enabled<br>
   **Bash or PS**
   Replace all items in < > with items that are valid for your environment.
    ~~~
     az rest --method get --url "https://management.azure.com/subscriptions/<SUB_ID>/resourceGroups/<RESOURCE_GROUP>/providers/Microsoft.Network/networkSecurityGroups/<NSG_NAME>/providers/Microsoft.Chaos/targets/microsoft-networksecuritygroup?api-version=2021-09-15-preview"
 
    ~~~
+   
+   ### Determine if a Capibility is enabled<br>
+  **Bash or PS**
+  Replace all items in < > with items that are valid for your environment.
+   ~~~
+    az rest --method get --url "https://management.azure.com/subscriptions/<SUB_ID>/resourceGroups/<RESOURCE_GROUP>/providers/Microsoft.Network/networkSecurityGroups/<NSG_NAME>/providers/Microsoft.Chaos/capabilities/microsoft-networksecuritygroup?api-version=2021-09-15-preview"
+
+   ~~~
+  
