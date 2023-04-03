@@ -10,7 +10,7 @@ The following commands come in handy when useing Azure Chaos Studio
             ~~~
 
 <br>
-**Bash**
+*Bash*
 
    ~~~
     az provider show --namespace 'Microsoft.Chaos' | grep registrationState
