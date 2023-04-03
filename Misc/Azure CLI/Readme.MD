@@ -3,11 +3,11 @@ The following commands come in handy when useing Azure Chaos Studio
 
 ## Check to see if the Microsoft.Chaos provider is registered <br>
 
-            ```
+            ~~~
             
                az provider show --namespace 'Microsoft.Chaos' &#124; grep registrationState
             
-            ```
+            ~~~
 
 <br>
 sdfsdf
