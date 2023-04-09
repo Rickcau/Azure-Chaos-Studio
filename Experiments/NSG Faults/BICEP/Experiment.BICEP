@@ -1,4 +1,4 @@
-// Working 3/19/2023
+// Working 4/9/2023
 // Created By: Rick Caudle
 param experimaneName string
 param location string = resourceGroup().location
@@ -47,7 +47,7 @@ resource experiments_resource 'Microsoft.Chaos/experiments@2022-10-01-preview' =
                 parameters: [
                   {
                     key: 'sourceAddresses'
-                    value: 'Any'
+                    value: '["*"]'
                   }
                   {
                     key: 'sourcePortRanges'
@@ -55,11 +55,11 @@ resource experiments_resource 'Microsoft.Chaos/experiments@2022-10-01-preview' =
                   }
                   {
                     key: 'destinationAddresses'
-                    value: '["${serviceDestinationAddresses}"]'
+                    value: '["ServiceBus"]'
                   }
                   {
                     key: 'destinationPortRanges'
-                    value: 'Any'
+                    value: '["0-65535"]'
                   }
                   {
                     key: 'direction'
@@ -75,7 +75,7 @@ resource experiments_resource 'Microsoft.Chaos/experiments@2022-10-01-preview' =
                   }
                   {
                     key: 'priority'
-                    value: '4000'
+                    value: '500'
                   }
                   {
                     key: 'name'
@@ -86,7 +86,7 @@ resource experiments_resource 'Microsoft.Chaos/experiments@2022-10-01-preview' =
                     value: 'true'
                   }
                 ]
-                name: 'urn:csci:microsoft:networkSecurityGroup:securityRule/1.1'
+                name: 'urn:csci:microsoft:networkSecurityGroup:securityRule/1.1' 
               }
             ]
           }

@@ -24,21 +24,25 @@ resource networkSecurityGroups_resource 'Microsoft.Network/networkSecurityGroups
   }
 }
 
-// RDC adding 3/20 to test 
-// Target/Capability Resources 
-  // First NSG is used for testing the SecurityRule-1.0 fault. 
-  // Second NSG is used for testing the sad path of Target resource validation. 
-  // Third NSG is used for testing the sad path of Capability resource validation. 
+// RDC Update: 3/20/2023 - Added Capabiliies and Targets inline.  These could be moved to a separate Bicep file.  See Nsg-Capsbilities.BICEP for example
+// If moved to a separate file, you would need to use a Module to important these capabilities/targers
+
   resource networkSecurityGroupTarget 'Microsoft.Chaos/targets@2021-09-15-preview' =  { 
     name: 'Microsoft-NetworkSecurityGroup' 
     scope: networkSecurityGroups_resource 
     properties: {} 
   } 
   
-  resource securityRuleCapability 'Microsoft.Chaos/targets/capabilities@2021-09-15-preview' = { 
+  resource securityRuleCapability1 'Microsoft.Chaos/targets/capabilities@2021-09-15-preview' = { 
     name: '${networkSecurityGroupTarget.name}/SecurityRule-1.0' 
     scope: networkSecurityGroups_resource 
   } 
+
+  resource securityRuleCapability2 'Microsoft.Chaos/targets/capabilities@2021-09-15-preview' = { 
+    name: '${networkSecurityGroupTarget.name}/SecurityRule-1.1' 
+    scope: networkSecurityGroups_resource 
+  } 
+  
   output name string = networkSecurityGroups_resource.name
 // End of 3/20 test
 
